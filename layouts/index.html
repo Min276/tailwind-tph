@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thate Pan Hub</title>
+	<link rel="stylesheet" href="css/style.css"></link>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <!-- Navbar goes here -->
+	<div class="container flex justify-center">
+		<nav class="bg-white" style="margin-right: -11%;">
+			<div class="max-w-6xl mx-auto px-4">
+				<div class="flex">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-2">
+								<img src="../images/TPHlogo.svg" alt="Logo" class="h-16 mr-2" style="width: 9rem;">
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+						<div class="md:flex items-center space-x-1 m-px" >
+							<a href="#" class="nav-link text-[#ffb300]">Home</a>
+							<a class="nav-link" id="dropdownButton" data-dropdown-toggle="dropdown">Courses <svg class="w-4 h-4" style="display: inline-block;" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a></button>
+							<a href="#" class="nav-link">News</a>
+                            <a href="#" class="nav-link">About</a>
+							<a href="#" class="nav-link" style="margin-right: 10px;">Contact Us</a>
+                            <a href="#" class="nav-button">Donate</a>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div id="dropdown" class="hidden custom-dropdown">
+				<ul class="py-1" aria-labelledby="dropdownButton">
+				  <li>
+					<a href="#" class="dropdown-link">Suu San (Age 7-9)</a>
+				  </li>
+				  <li>
+					<a href="#" class="dropdown-link">Lae Lar (Age 10-13)</a>
+				  </li>
+				  <li>
+					<a href="#" class="dropdown-link">Phan Tee (Age 14-16)</a>
+				  </li>
+				</ul>
+			</div>
+			 <div class="flex justify-start">
+				 
+				<h1 class="text-[#ffb300] banner-text mt-6 font-bold">
+				Computer Science & <br> Artificial Intelligence for <br> Every Kid in Myanmar</h3>
+			</div>
+			<div class="flex justify-start">
+			<h1 class="banner-text">
+				Youth-led Non-profit Social<br>
+				Enterprise Making Computer<br>
+				Science Education Accessible<br>
+				for Everyone
+				</h1>
+				</div>
+			<div class="flex justify-start">
+			<p class="some-text px-4 py-2" style="line-height: 1.8rem;">
+				We are a non-profit social enterprise based in Myanmar, <br> 
+				introducing Computer Science for kids and teenagers <br>
+				across Myanmar with carefully-tailored, interactive <br>
+				online classes for free.
+			</p>
+			</div>
+		</nav>
+        
+        <div class="flex justify-end" style="margin-right: -6%">
+            <img src="../images/banner.png" alt="banner" class="h-128 w-128" style="width: 550px" >
+        </div>
+        </div>
+
+<footer class="bg-[#57465b] text-center lg:text-left text-white mt-12">
+  <div class="container py-6 text-gray-800 mx-auto pr-20" style="padding-left: 6.5rem;">
+    <div class="grid lg:grid-cols-2 gap-96">
+      <div class="mb-6 md:mb-0">
+        <h4 class="footer-title">Contact Us</h4>
+
+        <div class="mb-4 leading-10 text-white">
+         <a href="tel:099970764070">(+95)9970764070</a><br>
+		 <a href="mailto:hello@thatepanhub.com">hello@thatepanhub.com</a>
+        </div>
+      </div>
+
+      <div class="mb-6 md:mb-0">
+        <h4 class="footer-title">Follow Us</h5>
+
+        <div class="mb-4">
+          <a href="#"><img src="../images/facebook.svg"></a>
+		  <a href="#"><img src="../images/twitter.svg"></a>
+		  <a href="#"><img src="../images/instagram.svg"></a>
+		  <a href="#"><img src="../images/linkedin.svg"></a>
+		  <a href="#"><img src="../images/youtube.svg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-[#9b9b9b]"/>
+
+  <div class="text-center p-4 uppercase text-[#9b9b9b]">
+    Copyright &copy; 2022 Thate Pan Hub
+  </div>
+</footer>
+</body>
+<script>
+
+	$(document).ready(function() {
+
+	$('#dropdownButton').click( function()  {
+		$("#dropdown").toggleClass("hidden")
+	});
+});
+</script>
+</html>

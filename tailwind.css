@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom-dropdown{
+        @apply inline-block
+        absolute nav-spacing border-t-2 border-[#ffb300]
+        list-none bg-white rounded divide-y shadow 
+    }
+    .dropdown-link{
+        @apply block py-2 px-4  
+        text-[#7b567d] hover:text-[#ffb300] text-base
+    }
+    .nav-link{
+        @apply py-4 px-2 text-[#7b567d] text-base
+         hover:text-[#ffb300] transition duration-300
+    }
+    .nav-button{
+        @apply rounded-lg px-4 py-2 bg-white text-[#7b567d] nav-border
+        text-base hover:bg-[#ffb300] transition duration-300
+    }
+    .banner-text{
+        @apply text-3xl px-4 py-2 some-text font-semibold
+    }
+    .footer-title{
+        @apply text-xl font-semibold mb-2 py-4 mt-6 text-white
+    }
+}
+
+@layer utilities {
+    .nav-spacing{
+        top: 4.5rem;
+        left: 25rem;
+    }
+    html{
+        font-family: "Poppins", sans-serif;
+    }
+    .nav-border{
+        border-radius: 25px; border: 2px solid #ffb300; z-index: 1;
+    }
+    .some-text{
+        line-height: 3rem;
+        margin-left: 1rem;
+        color: #5b465a;
+    }
+    a img {
+        display: inline-block;
+        margin-right: 1rem;
+        width: 2.5rem;
+    }
+}
