@@ -25,6 +25,9 @@
     .banner-text{
         @apply text-3xl px-4 py-2 some-text font-semibold
     }
+    .b-text{
+        @apply xs-font sm:sm-font md:text-3xl md:custom-text py-2 custom-text font-semibold
+    }
     .footer-title{
         @apply text-xl font-semibold mb-2 py-4 mt-6 text-white
     }
@@ -33,7 +36,7 @@
 @layer utilities {
     .nav-spacing{
         top: 4.5rem;
-        left: 25rem;
+        left: 23rem;
     }
     html{
         font-family: "Poppins", sans-serif;
@@ -46,9 +49,24 @@
         margin-left: 1rem;
         color: #5b465a;
     }
+    .custom-text{
+        line-height: 3rem;
+        color: #5b465a;
+    }
+    .xs-font{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    .sm-font{
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+    }
     a img {
         display: inline-block;
         margin-right: 1rem;
         width: 2.5rem;
+    }
+    .pr-108{
+        padding-right: 26rem;
     }
 }
